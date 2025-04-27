@@ -76,7 +76,7 @@
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
                         <?php
-                        $no = 1; 
+                        $no = 1;
                         foreach ($mahasiswa as $m): ?>
                             <tr class="hover:bg-gray-50 transition duration-150 student-row" data-id="<?= $m['id'] ?>">
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 student-id"><?= $no++ ?></td> <!-- Pakai $no -->
@@ -113,7 +113,7 @@
 
         <!-- Empty State -->
         <?php if (empty($mahasiswa)): ?>
-            <div class="text-center py-12">
+            <div class="bg-white rounded-xl shadow-md p-8 text-center">
                 <div class="mx-auto w-24 h-24 rounded-full bg-primary-50 flex items-center justify-center mb-4">
                     <i class="fas fa-user-graduate text-3xl text-primary-400"></i>
                 </div>
@@ -124,6 +124,7 @@
                 </a>
             </div>
         <?php endif ?>
+
     </div>
 
     <script>
